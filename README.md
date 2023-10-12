@@ -1,18 +1,35 @@
-# Vue 3 + TypeScript + Vite
+# Image Carousel README
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[DEMO](https://igor-kashchenko.github.io/frontco-test-task/)
 
-## Recommended IDE Setup
+This project is a test task for implementing a simple and user-friendly Image Carousel component in JavaScript or TypeScript using Vue 3. In addition to the basic requirements, we have used PrimeVue, and PrimeFlex to enhance the functionality and design of the Image Carousel. The Image Carousel allows you to scroll through a list of images fetched from picsum.photos, with responsive behavior for both desktop and mobile views. You can also select and deselect images, and the selected images are displayed in a separate list below the carousel.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Features
 
-## Type Support For `.vue` Imports in TS
+### Basic Features
+1. **Image Carousel:** The main feature of this project is the image carousel that allows you to scroll through a list of images.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+2. **Infinite Scrolling:** You can navigate through the images with "prev" and "next" buttons. The carousel supports infinite scrolling, so you can keep scrolling to see more images.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+3. **Responsive Design:**
+    - **Desktop Version:** In the desktop view, the number of visible images varies to fit the viewport width. This provides an optimal viewing experience for larger screens.
+    - **Mobile Version:** In the mobile view, only one full-width image is shown, making it more suitable for smaller screens.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+4. **Select Images:** You can select an image by clicking on it in the carousel. Selected images are marked with a blue border.
+
+5. **Deselect Images:** To deselect an image, click on it again. The blue border will be removed, indicating that the image is no longer selected.
+
+### Additional Features
+1. **Selected Image List:** Below the carousel, there is a list of selected images. Each selected image is displayed with its URL and a unique ID. You can see the images you have selected in this list.
+
+2. **Delete Selection:** You can also remove a selected image from the list by clicking on the "Delete" button next to it.
+
+## Technologies Used
+
+This project is built using the following technologies:
+
+- **JavaScript/TypeScript:** The core language for implementing the functionality.
+- **Vue 3:** A progressive JavaScript framework for building user interfaces.
+- **PrimeVue:** A set of UI components for Vue.js that help improve the user interface.
+- **PrimeFlex:** A flexible grid system for layout design, which helps create responsive designs.
+- **picsum.photos:** An image placeholder service used to fetch images for the carousel.
